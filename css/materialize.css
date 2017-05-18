@@ -10,25 +10,7 @@
 .materialize-red-text {
   color: #e51c23 !important;
 }
-.profile-image {
-  margin-right: 30px;
-}
-.pull-left {
-  float: left;
-}
-.name {
-    color: #49515a;
-    font-size: 38px;
-    margin-bottom: 5px;
-    margin-top: 30px;
-}.desc {
-    color: #778492;
-    font-family: "Lato", arial, sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
+
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important;
 }
@@ -4552,6 +4534,17 @@ small {
   transition: box-shadow .25s;
   border-radius: 2px;
 }
+.card-circle{
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #ececec;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+
+}
 
 .card .card-title {
   font-size: 24px;
@@ -5727,6 +5720,7 @@ label {
   font-size: 0.8rem;
   color: #9e9e9e;
 }
+
 
 /* Text Inputs + Textarea
    ========================================================================== */
