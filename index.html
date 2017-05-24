@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 <link rel="stylesheet" href="css/github-activity.css">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 
       <!--Let browser know website is optimized for mobile-->
@@ -74,19 +75,58 @@
 </div>
 	<div style="margin-top: 10px">
 	<div class="section white">
-		<h2 style="padding-left: 25px; font-family: 'AvenirNext','Helvetica Neue',Arial,Helvetica,sans-serif ;font-weight: 600;
+		<h2 class="center" style="padding-left: 25px; font-family: 'AvenirNext','Helvetica Neue',Arial,Helvetica,sans-serif ;font-weight: 600;
 " >My Projects</h2>
-<div class="item row">
-<div class="col s12 m4">
-	<img class="img-responsive project-image align-center" style=" align-self: center; " src="http://themes.3rdwavemedia.com/demo/developer/assets/images/projects/project-5.png" alt="project name">
-</div>
-<div class="col s12">
-    <h5 style="padding-left: 25px; font-family: 'AvenirNext','Helvetica Neue',Arial,Helvetica,sans-serif ;font-weight: 600;
-" >Atom - Designed for Mobile Apps</h5>
-    <p style="padding-left: 25px; font-family: 'AvenirNext','Helvetica Neue',Arial,Helvetica,sans-serif">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+<div class="col s12 white">
+<div id="masonry-grid">
+    <div class="grid-item" style="width:300px;
+  margin:0 auto 20px auto;
+  padding:20px;">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/usaver.png">
+          <span class="card-title">Usaver App</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">launch</i></a>
+        </div>
+        <div class="card-content">
+        <ul class="">
+                                    <li>  <span class="new badge green" data-badge-caption="Android"></span>
+<li >
+<span class="new badge orange" data-badge-caption="UI / UX"></span></li>
+<li>
+<span class="new badge blue" data-badge-caption="Personal"></span>
+</li>
 
+</li> 
+</ul>
+          <p>A personal security app for old aged people and women with offline location sharing feature loaded with various other features.</p>
+        </div>
+        <div class="card-content grey">
+        	<ul class="" style="list-style: none;">
+                                    <li>  <span class="new badge green" data-badge-caption="Android"></span>
+<li >
+<span class="new badge orange" data-badge-caption="UI / UX"></span></li>
+<li>
+<span class="new badge blue" data-badge-caption="Personal"></span>
+</li>
+
+</li> 
+</ul>
+        </div>
+      </div>
+  </div>
+    <div class="grid-item">
+    	<div class="card grey">
+<img src="img/usaver_logo150.png">
 </div>
-	</div>
+    </div>
+    <div class="grid-item">
+    	<div class="card grey">
+<img src="img/usaver_logo150.png">
+</div>
+    </div>
+</div>
+</div>
 	</div>
 	</div>
 </div>
@@ -161,7 +201,12 @@
 
     // GitHubCalendar(".calendar", "bhatiadheeraj");
 	GitHubActivity.feed({ username: "bhatiadheeraj", selector: "#feed",limit: 8 });
-
+var container = document.querySelector('#masonry-grid');
+var msnry = new Masonry( container, {
+  // options
+  columnWidth: 80,
+  itemSelector: '.grid-item'
+});
   </script>
   <style type="text/css">
   	* {box-sizing: border-box}
